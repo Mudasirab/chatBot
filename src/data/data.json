@@ -1,0 +1,50 @@
+[
+    {
+        "id":"intro", 
+        "message": "Do you agree to the Terms and Conditions?", 
+        "trigger": "intro-user"
+       },
+    {
+        "id":"intro-user",
+        "options":[
+            {"value":"yes", "label":"Yes", "trigger":"yes-res"},
+            {"value":"no", "label":"No", "trigger":"no-res"}
+        ]
+    },
+    {
+        "id":"no-res",
+        "message": "Sorry to hear that",
+        "end": true
+    },
+    {
+    "id": "yes-res",
+    "message": "What is your name?",
+    "trigger": 2
+},
+
+  {
+    "id": 2,
+    "user": true,
+    "trigger": 3
+  },
+  {
+    "id": 3,
+    "message": "Hi {previousValue}, nice to meet you!",
+    "trigger": "age"
+  },
+  {
+    "id": "age",
+    "message": "How may I help you?",
+    "trigger": 5
+  },
+  {
+    "id": 5,
+    "user": true,
+    "trigger": 6
+  },
+  {
+    "id": 6,
+    "message": "We will connect you shortly",
+    "end": true
+  }
+]

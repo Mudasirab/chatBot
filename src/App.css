@@ -1,0 +1,35 @@
+.options-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .optn-button {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid green;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .link-list {
+    padding: 0;
+    list-style: none;
+   
+  }
+  
+  .link-list-item {
+    text-align: center;
+  }
+  
+  .link-list-item-url {
+    text-decoration: none;
+    margin: 1px;
+    display: block;
+    color: #1d1d1d;
+    padding: 0.5rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid green;
+   
+  }
